@@ -5,131 +5,221 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Aalaa Mustafa — Senior Testing Engineer</title>
 <meta name="description" content="Aalaa Mustafa, Senior Testing Engineer: web, mobile and API testing, automation, UAT and AI-assisted QA.">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0F1B2D;--panel:#16263D;--line:#2A3D55;--soft:#C9D4DF;--muted:#46566A;--g:#0B6B57;--gl:#5FD3A8;--bg:#F3F5F7}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 'IBM Plex Sans','Segoe UI',system-ui,sans-serif}
-h1,h2,h3{font-family:'Space Grotesk','Segoe UI',sans-serif;letter-spacing:-.02em;margin:0}
-.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px}
-.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
-.dark{background:var(--ink);color:#E8EEF4}
-header{position:sticky;top:0;z-index:9}
-.bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
-.logo{color:#fff;text-decoration:none;font:700 20px 'Space Grotesk',sans-serif}.logo span{color:var(--gl)}
-nav a{color:var(--soft);text-decoration:none;padding:12px 10px;display:inline-block}
-.hero{display:flex;flex-wrap:wrap;gap:48px;align-items:center;padding:72px 24px 88px}
-.hero>div:first-child{flex:1 1 520px}
-h1{font-size:clamp(2.6rem,6vw,4.5rem);line-height:1.02;color:#fff;margin:16px 0}
-.lead{font-size:18px;color:var(--soft);max-width:620px}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
-.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;border-radius:8px;text-decoration:none;border:1px solid #4A5D73;color:#fff}
-.btn.main{background:var(--gl);color:var(--ink);border:0;font-weight:600}
-.log{flex:1 1 340px;max-width:440px;background:var(--panel);border:1px solid var(--line);border-radius:12px}
-.log div{display:flex;justify-content:space-between;gap:12px;padding:6px 16px;color:var(--soft)}.log b{color:#fff;font-weight:400}
-.log .t{color:#8FA3B8;border-bottom:1px solid var(--line);padding:12px 16px}
-section{padding:56px 24px}
-.tag{color:var(--g)}.dark .tag{color:var(--gl)}
-h2{font-size:clamp(2rem,4vw,2.75rem);line-height:1.1;margin:8px 0 28px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#fff;border:1px solid #DCE2E8;border-radius:12px;padding:24px}
-.card h3{font-size:20px;margin:6px 0}.card p{margin:0;color:var(--muted)}
-.ai{border-radius:16px;padding:clamp(28px,5vw,56px)}.ai h2{color:#fff}
-.ai .card{background:var(--panel);border-color:var(--line)}.ai .card h3{color:#fff}.ai .card p{color:var(--soft)}
-.job{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:16px}.job>div:first-child{flex:0 1 240px}.job>div:last-child{flex:1 1 420px}
-.job ul{margin:8px 0 0;padding-left:20px;color:#2E3E52}
-.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{padding:6px 12px;background:#fff;border:1px solid #DCE2E8;border-radius:999px}
-.ok{color:var(--g);font-weight:600;margin-right:8px}
-footer .wrap{padding-top:72px;padding-bottom:48px}footer h2{color:#fff}
-.foot{border-top:1px solid var(--line);margin-top:32px;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;color:#8FA3B8;font-size:14px}
+:root{--ink:#141A33;--ink2:#1D2547;--line:#2E3866;--mist:#B9C1E0;--paper:#F7F8FB;--text:#1A2036;--sub:#515A78;--rule:#DDE1EC;--pass:#1F9D6B;--pass2:#4CC38A;--run:#F2B33D;--bug:#D9480F}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--text);font:17px/1.6 'Schibsted Grotesk','Segoe UI',system-ui,sans-serif}
+h1,h2,h3{margin:0;line-height:1.08;letter-spacing:-.025em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--run);outline-offset:3px}
+.code{font-family:'JetBrains Mono',ui-monospace,Consolas,monospace;font-size:14px}
+.w{max-width:1140px;margin:0 auto;padding:0 24px}
+.dark{background:var(--ink);color:#E9ECF8}
+.light{background:var(--paper)}
+.sec{padding:96px 0}
+.spec{display:inline-block;margin-bottom:14px;color:var(--pass)}.dark .spec{color:var(--pass2)}
+h2{font-size:clamp(2rem,4.4vw,3.2rem);font-weight:800;max-width:18ch;margin-bottom:40px}.dark h2{color:#fff}
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--ink);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;flex-wrap:wrap}
+.logo{font-weight:800;font-size:19px;text-decoration:none;color:#fff}
+nav{display:flex;flex-wrap:wrap;align-items:center}
+nav a{color:var(--mist);text-decoration:none;padding:10px 12px;font-size:15px}nav a:hover{color:#fff}
+.cov{position:absolute;left:0;bottom:-3px;height:3px;width:0;background:var(--pass2);transition:width .1s linear}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 22px;border-radius:6px;font-weight:700;text-decoration:none;border:2px solid currentColor;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.go{background:var(--pass2);border-color:var(--pass2);color:var(--ink)}
+.light .btn.go{background:var(--pass);border-color:var(--pass);color:#fff}
+.sm{min-height:40px;padding:0 16px;font-size:15px}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:88px 24px 104px}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5rem);font-weight:800;color:#fff;margin:0 0 22px}
+.hero p{color:var(--mist);font-size:19px;max-width:36ch;margin:0 0 30px}
+.row{display:flex;flex-wrap:wrap;gap:12px}
+.runner{background:var(--ink2);border:1px solid var(--line);border-radius:10px;overflow:hidden;box-shadow:0 30px 60px -30px #000}
+.rhead{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);color:var(--mist)}
+.rerun{background:none;border:1px solid var(--line);color:var(--mist);border-radius:4px;padding:4px 10px;cursor:pointer;font:inherit}
+.rerun:hover{color:#fff;border-color:var(--mist)}
+.tests{list-style:none;margin:0;padding:14px 16px;display:grid;gap:8px}
+.tests li{display:grid;grid-template-columns:22px 1fr;gap:8px;color:#E9ECF8}
+.st::before{content:"✓";color:var(--pass2);font-weight:600}
+.pending .st::before{content:"○";color:#5A6596}
+.running .st::before{content:"◐";color:var(--run);display:inline-block;animation:spin .6s linear infinite}
+.pending{color:#5A6596!important}
+@keyframes spin{to{transform:rotate(360deg)}}
+.prog{height:6px;background:var(--line);margin:0 16px}.prog i{display:block;height:100%;width:100%;background:var(--pass2);transition:width .3s}
+.sum{padding:12px 16px 16px;color:var(--pass2)}.sum b{color:#fff}
+/* skills */
+.suites{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px}
+.suite{border-top:2px solid var(--text);padding:22px 0 30px}
+.suite h3{font-size:24px;font-weight:700;margin-bottom:10px}
+.suite ul{list-style:none;padding:0;margin:0;color:var(--sub)}
+.suite li{padding:3px 0}.suite li::before{content:"✓ ";color:var(--pass);font-weight:700}
+/* pipeline */
+.pipe{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;position:relative;margin-bottom:40px}
+.pipe::before{content:"";position:absolute;top:34px;left:6%;right:6%;height:2px;background:var(--line)}
+.pipe::after{content:"";position:absolute;top:29px;left:6%;width:12px;height:12px;border-radius:50%;background:var(--run);box-shadow:0 0 14px var(--run);animation:flow 5s ease-in-out infinite}
+@keyframes flow{0%{left:6%}90%,100%{left:calc(94% - 12px)}}
+.step{position:relative;z-index:1;text-align:center}
+.dot{width:68px;height:68px;margin:0 auto 14px;border-radius:50%;background:var(--ink2);border:2px solid var(--pass2);display:grid;place-items:center;font-size:24px}
+.step b{display:block;color:#fff;font-size:17px}.step span{color:var(--mist);font-size:15px}
+.aiwho{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;border-top:1px solid var(--line);padding-top:32px}
+.aiwho h3{font-size:20px;color:#fff;margin-bottom:6px}.aiwho p{margin:0;color:var(--mist)}
+/* timeline */
+.tl{position:relative;padding-left:36px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:var(--rule)}
+.job{position:relative;padding-bottom:44px}
+.job::before{content:"✓";position:absolute;left:-36px;top:2px;width:20px;height:20px;border-radius:50%;background:var(--pass);color:#fff;font-size:12px;display:grid;place-items:center;font-weight:700}
+.when{color:var(--pass)}
+.job h3{font-size:clamp(1.4rem,2.6vw,1.9rem);font-weight:800;margin:6px 0 2px}
+.co{color:var(--sub);margin-bottom:12px}
+.job ul{margin:0;padding-left:20px;max-width:72ch}.job li{margin:4px 0}
+/* projects */
+.bugs{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.bug{background:var(--ink2);border:1px solid var(--line);border-left:4px solid var(--pass2);border-radius:6px;padding:26px}
+.bug .code{color:var(--mist)}
+.bug h3{font-size:24px;color:#fff;margin:8px 0}.bug p{margin:0;color:var(--mist)}
+.env{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}.env span{border:1px solid var(--line);border-radius:4px;padding:2px 8px;font-size:13px;color:var(--mist)}
+/* tools */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips span{border:1.5px solid var(--rule);background:#fff;border-radius:4px;padding:6px 12px;font-size:15px}
+.aw p{margin:0 0 12px;padding-left:28px;position:relative}.aw p::before{content:"✓";position:absolute;left:0;color:var(--pass);font-weight:700}
+.two h2{font-size:clamp(1.8rem,3vw,2.3rem);margin-bottom:24px}
+/* contact */
+.cta h2{font-size:clamp(2.4rem,6vw,4.6rem);max-width:16ch;color:#fff;margin-bottom:28px}
+.cta p{color:var(--mist);max-width:50ch;margin:0 0 32px;font-size:19px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--line);margin-top:72px;padding:24px 0 32px;color:#8590BC;font-size:15px}
+/* reveal: only when JS is on */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.js .rv.in{opacity:1;transform:none}
+@media (max-width:820px){.hero,.two,.suites,.bugs,.aiwho{grid-template-columns:1fr}.pipe{grid-template-columns:1fr;gap:18px}.pipe::before,.pipe::after{display:none}.step{display:grid;grid-template-columns:68px 1fr;gap:16px;text-align:left;align-items:center}.dot{margin:0}.sec{padding:72px 0}nav a{padding:8px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<header class="dark"><div class="wrap bar">
-<a class="logo" href="#top">Aalaa Mustafa<span>.</span></a>
-<nav class="mono"><a href="#skills">Skills</a><a href="#ai">AI Testing</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
-</div></header>
+<header><div class="w bar">
+<a class="logo" href="#top">Aalaa Mustafa</a>
+<nav aria-label="Main"><a href="#skills">Skills</a><a href="#ai">AI workflow</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+<a class="btn go sm" href="Aalaa_Mustafa_Senior_Testing_Engineer.pdf" download>Download CV</a></nav>
+</div><div class="cov" id="cov" aria-hidden="true"></div></header>
 
-<div id="top" class="dark"><div class="wrap hero">
+<section id="top" class="dark"><div class="w hero">
 <div>
-<div class="mono" style="color:var(--gl)">$ run --suite portfolio ✓ passed</div>
-<h1>Senior Testing Engineer who ships releases with confidence.</h1>
-<p class="lead">7 years testing web, mobile, government and agriculture platforms. I own UAT and go/no-go decisions, build automation that cuts manual regression, and use AI tools to move faster from story to test to script.</p>
-<div class="btns"><a class="btn main" href="mailto:aalaaosama94@gmail.com">Get in touch</a><a class="btn" href="#experience">View experience</a><a class="btn" href="https://www.linkedin.com/in/aalaa-mustafa-9476b9bb/">LinkedIn</a></div>
+<h1>I find the bugs before your users do.</h1>
+<p>Senior Testing Engineer with 7 years across web, mobile, API, government and agriculture platforms. I own UAT, make the go/no-go call, and automate what slows a team down.</p>
+<div class="row"><a class="btn go" href="Aalaa_Mustafa_Senior_Testing_Engineer.pdf" download>Download CV</a><a class="btn" href="#contact">Contact me</a></div>
 </div>
-<div class="log mono">
-<div class="t">test-report.log</div>
-<div>experience<b>7 years</b></div><div>companies<b>5</b></div><div>platforms<b>web · iOS · Android · API</b></div><div>certified<b>ISTQB CTFL</b></div><div>based in<b>Giza, Egypt</b></div>
-<div style="color:var(--gl);border-top:1px dashed var(--line);padding:12px 16px">✓ open to new opportunities</div>
-</div>
-</div></div>
-
-<section id="skills" class="wrap">
-<div class="mono tag">01 / skills</div><h2>What I bring to a team</h2>
-<div class="grid">
-<div class="card"><h3>Testing types</h3><p>End-to-End, Integration, API, UAT, Usability and Exploratory testing.</p></div>
-<div class="card"><h3>Automation &amp; performance</h3><p>Selenium (C#, Java), SHAFT_ENGINE, Robot Framework and JMeter load testing.</p></div>
-<div class="card"><h3>Mobile automation</h3><p>Robot Framework suites for iOS and Android, run on real devices through LambdaTest.</p></div>
-<div class="card"><h3>Process &amp; leadership</h3><p>Requirements gap analysis, UAT ownership, defect lifecycle and go/no-go release calls.</p></div>
-</div>
-</section>
-
-<section id="ai" class="wrap"><div class="dark ai">
-<div class="mono tag">02 / ai-assisted testing</div><h2>From story to test to script, faster</h2>
-<div class="grid">
-<div class="card"><div class="mono" style="color:#8FA3B8">Jira</div><h3>Atlassian Rovo</h3><p>Generates test cases straight from user stories and acceptance criteria.</p></div>
-<div class="card"><div class="mono" style="color:#8FA3B8">TestRail → code → Jira</div><h3>Claude Code</h3><p>Reads TestRail cases and turns them into automation scripts, reads Jira stories, and creates and updates issues.</p></div>
-<div class="card"><div class="mono" style="color:#8FA3B8">Everyday work</div><h3>Claude &amp; Copilot</h3><p>Support documentation, analysis, reporting and other day-to-day tasks.</p></div>
+<div class="runner code" aria-label="Test run summary">
+<div class="rhead"><span>aalaa.spec.ts</span><button class="rerun" id="rerun" type="button">Run again</button></div>
+<ul class="tests" id="tests">
+<li><span class="st"></span>has 7 years of testing experience</li>
+<li><span class="st"></span>tests web, iOS, Android and APIs</li>
+<li><span class="st"></span>automates with Selenium and Robot Framework</li>
+<li><span class="st"></span>load tests with JMeter</li>
+<li><span class="st"></span>owns UAT and go/no-go decisions</li>
+<li><span class="st"></span>uses AI to go from story to script</li>
+<li><span class="st"></span>holds ISTQB Foundation certification</li>
+</ul>
+<div class="prog"><i id="prog"></i></div>
+<div class="sum" id="sum"><b>7 passed</b>, 0 failed. Ready for release.</div>
 </div>
 </div></section>
 
-<section id="experience" class="wrap">
-<div class="mono tag">03 / experience</div><h2>Where I have worked</h2>
-<div class="card job"><div><div class="mono tag">Mar 2022 — Present</div><b>ITWorx</b><br>Egypt</div><div><h3>Senior Testing Engineer</h3><ul>
-<li>Reviewed requirements for an agriculture-sector platform, catching contradictions and business gaps before development.</li>
+<section id="skills" class="light sec"><div class="w">
+<span class="spec code">skills.spec: 4 suites passed</span>
+<h2 class="rv">What I bring to your team</h2>
+<div class="suites">
+<div class="suite rv"><h3>Testing types</h3><ul><li>End-to-end and integration</li><li>API testing with Postman</li><li>UAT, usability and exploratory</li></ul></div>
+<div class="suite rv"><h3>Automation and performance</h3><ul><li>Selenium with C# and Java</li><li>SHAFT_ENGINE framework</li><li>JMeter load and performance tests</li></ul></div>
+<div class="suite rv"><h3>Mobile automation</h3><ul><li>Robot Framework for iOS and Android</li><li>Real devices on LambdaTest</li><li>Cross-device coverage</li></ul></div>
+<div class="suite rv"><h3>Process and leadership</h3><ul><li>Requirements and business gap analysis</li><li>Defect lifecycle to closure</li><li>Go/no-go release recommendations</li></ul></div>
+</div>
+</div></section>
+
+<section id="ai" class="dark sec"><div class="w">
+<span class="spec code">ai-workflow.spec: pipeline green</span>
+<h2 class="rv">From user story to automated test, with AI</h2>
+<div class="pipe rv">
+<div class="step"><div class="dot">📋</div><div><b>Jira story</b><span>Read the requirement</span></div></div>
+<div class="step"><div class="dot">✨</div><div><b>Rovo</b><span>Generate test cases</span></div></div>
+<div class="step"><div class="dot">🗂️</div><div><b>TestRail</b><span>Store and review cases</span></div></div>
+<div class="step"><div class="dot">⌨️</div><div><b>Claude Code</b><span>Write automation scripts</span></div></div>
+<div class="step"><div class="dot">🐞</div><div><b>Jira issue</b><span>Log and update defects</span></div></div>
+</div>
+<div class="aiwho">
+<div class="rv"><h3>Atlassian Rovo</h3><p>Creates test cases straight from Jira user stories and acceptance criteria.</p></div>
+<div class="rv"><h3>Claude Code</h3><p>Reads TestRail cases and turns them into scripts, reads stories, and creates and updates Jira issues.</p></div>
+<div class="rv"><h3>Claude and Copilot</h3><p>Help with documentation, analysis, reporting and everyday tasks.</p></div>
+</div>
+</div></section>
+
+<section id="experience" class="light sec"><div class="w">
+<span class="spec code">career.log: 7 years, 5 companies</span>
+<h2 class="rv">Where I have tested</h2>
+<div class="tl">
+<div class="job rv"><span class="when code">Mar 2022 to present</span><h3>Senior Testing Engineer</h3><div class="co">ITWorx, Egypt</div><ul>
+<li>Reviewed requirements for an agriculture-sector platform and caught contradictions and business gaps before development.</li>
 <li>Owned UAT with customers and recommended documented go/no-go decisions for UAT and production.</li>
-<li>Ran JMeter load and performance tests; wrote Selenium C# automation for web and real-device mobile flows.</li>
-<li>Built Robot Framework mobile automation suites on LambdaTest for cross-device coverage.</li>
-<li>Brought AI into the workflow with Rovo, Claude Code, Claude and Copilot.</li></ul></div></div>
-<div class="card job"><div><div class="mono tag">Jun 2021 — Feb 2022</div><b>Bayan-Tech</b><br>Egypt</div><div><h3>Software Quality Control &amp; Automation Tester</h3><ul>
-<li>Built Selenium (Java) suites on SHAFT_ENGINE and set the automation roadmap.</li>
+<li>Ran JMeter load tests; wrote Selenium C# automation for web and real-device mobile flows.</li>
+<li>Built Robot Framework mobile automation suites on LambdaTest.</li>
+<li>Brought AI into testing with Rovo, Claude Code, Claude and Copilot.</li></ul></div>
+<div class="job rv"><span class="when code">Jun 2021 to Feb 2022</span><h3>Software Quality Control and Automation Tester</h3><div class="co">Bayan-Tech, Egypt</div><ul>
+<li>Built Selenium Java suites on SHAFT_ENGINE and set the automation roadmap.</li>
 <li>Tested “Raspberry,” a translation and location-based app, with regression after every change.</li>
-<li>Wrote release notes and produced demo videos for stakeholders.</li></ul></div></div>
-<div class="card job"><div><div class="mono tag">May 2020 — Jun 2021</div><b>ZAHA Technology Solutions</b><br>Egypt</div><div><h3>Software Quality Control</h3><ul>
-<li>E2E and UAT testing for the Financial Regulatory Authority portal and a Cairo Electricity Company system.</li>
+<li>Wrote release notes and produced demo videos for stakeholders.</li></ul></div>
+<div class="job rv"><span class="when code">May 2020 to Jun 2021</span><h3>Software Quality Control</h3><div class="co">ZAHA Technology Solutions, Egypt</div><ul>
+<li>Ran E2E and UAT testing for the Financial Regulatory Authority portal and a Cairo Electricity Company system.</li>
 <li>Main testing contact for customers; trained end users on new releases.</li>
-<li>Named Top Performer, July 2020.</li></ul></div></div>
-<div class="card job"><div><div class="mono tag">Jul 2019 — Dec 2020</div><b>NTG Clarity</b><br>Egypt · plus part-time at Joint Scope Technologies</div><div><h3>Software Quality Control</h3><ul>
+<li>Named Top Performer, July 2020.</li></ul></div>
+<div class="job rv"><span class="when code">Jul 2019 to Dec 2020</span><h3>Software Quality Control</h3><div class="co">NTG Clarity, Egypt, plus part-time at Joint Scope Technologies</div><ul>
 <li>Wrote module- and system-level test scenarios for government and utility projects.</li>
-<li>Gave UX feedback to developers and product managers; ran regression after each change.</li></ul></div></div>
-</section>
-
-<section id="projects" class="wrap">
-<div class="mono tag">04 / projects</div><h2>Selected projects</h2>
-<div class="grid">
-<div class="card"><div class="mono">Agriculture</div><h3>Farmer services platform</h3><p>Crop protection, product analysis and farmer services modules. Requirements review, UAT, performance and automation.</p></div>
-<div class="card"><div class="mono">Government</div><h3>FRA citizen portal</h3><p>Regulatory portal for the Financial Regulatory Authority. E2E and UAT testing.</p></div>
-<div class="card"><div class="mono">Utilities</div><h3>Cairo Electricity system</h3><p>Web and handheld-device system. Scenario design, E2E and regression testing.</p></div>
-<div class="card"><div class="mono">Mobile</div><h3>Raspberry app</h3><p>In-house translation and location-based app. Functional and regression testing.</p></div>
+<li>Gave UX feedback to developers and product managers; ran regression after each change.</li></ul></div>
 </div>
-</section>
-
-<section class="wrap"><div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:40px">
-<div><div class="mono tag">05 / tools</div><h2 style="font-size:28px">Toolbox</h2>
-<div class="chips mono"><span>Jira</span><span>TestRail</span><span>Azure DevOps</span><span>TFS</span><span>Selenium</span><span>Robot Framework</span><span>SHAFT_ENGINE</span><span>JMeter</span><span>LambdaTest</span><span>Postman</span><span>MySQL Workbench</span><span>DBeaver</span><span>PgAdmin</span><span>AWS</span><span>CloudWatch</span><span>Datadog</span><span>Trello</span><span>FreshDesk</span></div></div>
-<div><div class="mono tag">06 / recognition</div><h2 style="font-size:28px">Certifications &amp; awards</h2>
-<p><span class="ok">✓</span><b>Best QA Runner-Up &amp; Best Team</b> — Testathon, Facebook Testing Hackathon, Cairo</p>
-<p><span class="ok">✓</span><b>ISTQB Certified Tester</b> — Foundation Level (ASTQB, U.S.)</p>
-<p><span class="ok">✓</span><b>Top Performer</b> — ZAHA Technology Solutions, July 2020</p>
-<p><span class="ok">✓</span><b>Test Automation: Leveling Up</b> — Automatest</p>
-<p><span class="ok">✓</span><b>B.Sc. Computer Science</b> — Fayoum University, 2017</p></div>
 </div></section>
 
-<footer id="contact" class="dark"><div class="wrap">
-<div class="mono tag">07 / contact</div>
-<h2 style="font-size:clamp(2rem,5vw,3.5rem)">Need someone to own quality on your next release?</h2>
-<div class="btns"><a class="btn main" href="mailto:aalaaosama94@gmail.com">aalaaosama94@gmail.com</a><a class="btn" href="tel:+201092364441">+20 10 9236 4441</a><a class="btn" href="https://www.linkedin.com/in/aalaa-mustafa-9476b9bb/">LinkedIn</a></div>
-<div class="foot"><span>Aalaa Mustafa · Pyramids Gardens, Giza, Egypt</span><span>English · Arabic</span></div>
-</div></footer>
+<section id="projects" class="dark sec"><div class="w">
+<span class="spec code">projects.spec: 4 systems tested</span>
+<h2 class="rv">Systems I have signed off</h2>
+<div class="bugs">
+<div class="bug rv"><span class="code">Agriculture</span><h3>Farmer services platform</h3><p>Crop protection, product analysis and farmer services. Requirements review, UAT, performance and automation.</p><div class="env"><span>Web</span><span>iOS</span><span>Android</span><span>JMeter</span></div></div>
+<div class="bug rv"><span class="code">Government</span><h3>FRA citizen portal</h3><p>Regulatory portal for the Financial Regulatory Authority. End-to-end and UAT testing.</p><div class="env"><span>Web</span><span>UAT</span><span>E2E</span></div></div>
+<div class="bug rv"><span class="code">Utilities</span><h3>Cairo Electricity system</h3><p>Web and handheld-device system. Scenario design, end-to-end and regression testing.</p><div class="env"><span>Web</span><span>Handheld</span><span>Regression</span></div></div>
+<div class="bug rv"><span class="code">Mobile</span><h3>Raspberry app</h3><p>Translation and location-based app. Functional and regression testing after every change.</p><div class="env"><span>Mobile</span><span>Regression</span></div></div>
+</div>
+</div></section>
+
+<section class="light sec"><div class="w two">
+<div class="rv"><span class="spec code">tools.config</span><h2>My toolbox</h2>
+<div class="chips"><span>Jira</span><span>TestRail</span><span>Azure DevOps</span><span>TFS</span><span>Selenium</span><span>Robot Framework</span><span>SHAFT_ENGINE</span><span>JMeter</span><span>LambdaTest</span><span>Postman</span><span>MySQL Workbench</span><span>DBeaver</span><span>PgAdmin</span><span>AWS</span><span>CloudWatch</span><span>Datadog</span><span>Trello</span><span>FreshDesk</span><span>Rovo</span><span>Claude Code</span><span>Copilot</span></div></div>
+<div class="rv aw"><span class="spec code">certificates.spec</span><h2>Certifications and awards</h2>
+<p><b>Best QA Runner-Up and Best Team</b>, Testathon (Facebook Testing Hackathon), Cairo</p>
+<p><b>ISTQB Certified Tester</b>, Foundation Level (ASTQB, U.S.)</p>
+<p><b>Top Performer</b>, ZAHA Technology Solutions, July 2020</p>
+<p><b>Test Automation: Leveling Up</b>, Automatest</p>
+<p><b>B.Sc. Computer Science</b>, Fayoum University, 2017</p></div>
+</div></section>
+
+<section id="contact" class="dark sec cta"><div class="w">
+<span class="spec code">release.check: all tests passed</span>
+<h2 class="rv">Ready to test your next release.</h2>
+<p class="rv">I am open to Senior QA and Test Automation roles. Download my CV or reach out directly.</p>
+<div class="row rv"><a class="btn go" href="Aalaa_Mustafa_Senior_Testing_Engineer.pdf" download>Download CV</a><a class="btn" href="mailto:aalaaosama94@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/aalaa-mustafa-9476b9bb/">LinkedIn</a><a class="btn" href="tel:+201092364441">+20 10 9236 4441</a></div>
+<div class="foot"><span>Aalaa Mustafa, Pyramids Gardens, Giza, Egypt</span><span>English and Arabic</span></div>
+</div></section>
+
+<script>
+document.documentElement.classList.add('js');
+var calm=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+var cov=document.getElementById('cov');
+addEventListener('scroll',function(){var h=document.documentElement;cov.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+var items=[].slice.call(document.querySelectorAll('#tests li')),prog=document.getElementById('prog'),sum=document.getElementById('sum'),timer;
+function run(){if(calm)return;clearTimeout(timer);var i=0;items.forEach(function(li){li.className='pending'});prog.style.width='0';sum.innerHTML='Running tests…';
+(function next(){if(i>0)items[i-1].className='';if(i===items.length){prog.style.width='100%';sum.innerHTML='<b>'+items.length+' passed</b>, 0 failed. Ready for release.';return}
+items[i].className='running';prog.style.width=(i/items.length*100)+'%';i++;timer=setTimeout(next,450)})()}
+document.getElementById('rerun').addEventListener('click',run);
+setTimeout(run,400);
+</script>
 </body>
 </html>
